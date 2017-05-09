@@ -1,0 +1,160 @@
+2017-05-09 14:39:26,534 p=13426 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 14:39:26,534 p=13426 u=jasonzhang |  [0;36mskipping: no hosts matched[0m
+2017-05-09 14:39:26,535 p=13426 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 14:39:26,536 p=13426 u=jasonzhang |  [0;36mskipping: no hosts matched[0m
+2017-05-09 14:39:26,541 p=13426 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 14:39:26,568 p=13426 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 14:39:27,547 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:39:27,550 p=13426 u=jasonzhang |  TASK [libselinux-python : Install libselinux-python] ***************************
+2017-05-09 14:39:32,856 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:32,859 p=13426 u=jasonzhang |  TASK [epel : Get epel-repo rpm] ************************************************
+2017-05-09 14:39:33,606 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:33,608 p=13426 u=jasonzhang |  TASK [epel : Install epel-repo rpm] ********************************************
+2017-05-09 14:39:34,881 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:34,883 p=13426 u=jasonzhang |  TASK [ntp : Install ntp] *******************************************************
+2017-05-09 14:39:40,917 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:40,920 p=13426 u=jasonzhang |  TASK [ntp : Ensure ntp is running and enabled] *********************************
+2017-05-09 14:39:41,593 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:41,597 p=13426 u=jasonzhang |  TASK [ambari_common : Check OS Version] ****************************************
+2017-05-09 14:39:41,633 p=13426 u=jasonzhang |  [0;36mskipping: [node1][0m
+2017-05-09 14:39:41,636 p=13426 u=jasonzhang |  TASK [ambari_common : Ensure iptables is stopped and is not running at boot time.] ***
+2017-05-09 14:39:41,928 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:41,930 p=13426 u=jasonzhang |  TASK [ambari_common : Remove ipv4 'localhost.localdomain' from /etc/hosts] *****
+2017-05-09 14:39:42,189 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:42,191 p=13426 u=jasonzhang |  TASK [ambari_common : Remove ipv6 'localhost.localdomain' from /etc/hosts] *****
+2017-05-09 14:39:42,446 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:42,448 p=13426 u=jasonzhang |  TASK [ambari_common : Add localhost to /etc/hosts] *****************************
+2017-05-09 14:39:42,710 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:42,712 p=13426 u=jasonzhang |  TASK [ambari_common : Download Ambari repo] ************************************
+2017-05-09 14:39:43,222 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:43,226 p=13426 u=jasonzhang |  TASK [ambari_common : Create Logrotate Script for Hadoop Services] *************
+2017-05-09 14:39:43,674 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:39:43,682 p=13426 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 14:39:43,692 p=13426 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 14:39:44,165 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:39:44,167 p=13426 u=jasonzhang |  TASK [ambari_master : Install ambari server] ***********************************
+2017-05-09 14:41:09,235 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:41:09,238 p=13426 u=jasonzhang |  TASK [ambari_master : Set Ambari Server Max Memory] ****************************
+2017-05-09 14:41:09,552 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:41:09,554 p=13426 u=jasonzhang |  TASK [ambari_master : Setup ambari server] *************************************
+2017-05-09 14:41:52,982 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:41:52,987 p=13426 u=jasonzhang |  TASK [ambari_master : start ambari server] *************************************
+2017-05-09 14:41:53,256 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:41:53,265 p=13426 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 14:41:53,275 p=13426 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 14:41:53,781 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:41:53,784 p=13426 u=jasonzhang |  TASK [ambari_slave : Install ambari-agent] *************************************
+2017-05-09 14:42:04,957 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:04,959 p=13426 u=jasonzhang |  TASK [ambari_slave : Create ambari-agent hostname script] **********************
+2017-05-09 14:42:05,442 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:05,445 p=13426 u=jasonzhang |  TASK [ambari_slave : Configure ambari-server hostname in ambari-agent configuration] ***
+2017-05-09 14:42:06,050 p=13426 u=jasonzhang |  [0;33mchanged: [node1] => (item={u'insertafter': u'\\[server\\]', u'regexp': u'^.*hostname=.*$', u'line': u'hostname=node1'})[0m
+2017-05-09 14:42:06,055 p=13426 u=jasonzhang |  [0;33mchanged: [node1] => (item={u'insertafter': u'\\[agent\\]', u'regexp': u'^hostname_script=.*$', u'line': u'hostname_script=/var/lib/ambari-agent/hostname.sh'})[0m
+2017-05-09 14:42:06,057 p=13426 u=jasonzhang |  TASK [ambari_slave : Ensure ambari-agent is running] ***************************
+2017-05-09 14:42:06,315 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:06,317 p=13426 u=jasonzhang |  TASK [ambari_slave : Wait for agent to register] *******************************
+2017-05-09 14:42:16,571 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:16,580 p=13426 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 14:42:16,599 p=13426 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 14:42:17,195 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:42:17,199 p=13426 u=jasonzhang |  TASK [epel : Get epel-repo rpm] ************************************************
+2017-05-09 14:42:17,449 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:42:17,451 p=13426 u=jasonzhang |  TASK [epel : Install epel-repo rpm] ********************************************
+2017-05-09 14:42:17,938 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:42:17,942 p=13426 u=jasonzhang |  TASK [python-pip : Install python-pip] *****************************************
+2017-05-09 14:42:22,258 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:22,260 p=13426 u=jasonzhang |  TASK [httplib2 : Install python httplib2 dependency] ***************************
+2017-05-09 14:42:23,425 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:23,429 p=13426 u=jasonzhang |  TASK [ambari_config : include_vars] ********************************************
+2017-05-09 14:42:23,522 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:42:23,525 p=13426 u=jasonzhang |  TASK [ambari_config : Install python-requests] *********************************
+2017-05-09 14:42:28,747 p=13426 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 14:42:28,761 p=13426 u=jasonzhang |  TASK [ambari_config : check if ambari-server is up on node1:8080] **************
+2017-05-09 14:44:29,098 p=13426 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 14:44:29,102 p=13426 u=jasonzhang |  TASK [ambari_config : Deploy cluster with Ambari; http://node1:8080] ***********
+2017-05-09 14:58:27,037 p=13426 u=jasonzhang |  [0;31mfatal: [node1]: FAILED! => {"changed": false, "failed": true, "msg": "Request failed with status FAILED"}[0m
+2017-05-09 14:58:27,038 p=13426 u=jasonzhang |  PLAY RECAP *********************************************************************
+2017-05-09 14:58:27,038 p=13426 u=jasonzhang |  node1                      : ok=31   changed=23   unreachable=0    failed=1   
+2017-05-09 15:05:52,160 p=13831 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 15:05:52,160 p=13831 u=jasonzhang |  [0;36mskipping: no hosts matched[0m
+2017-05-09 15:05:52,162 p=13831 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 15:05:52,162 p=13831 u=jasonzhang |  [0;36mskipping: no hosts matched[0m
+2017-05-09 15:05:52,168 p=13831 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 15:05:52,191 p=13831 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 15:05:53,278 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:05:53,281 p=13831 u=jasonzhang |  TASK [libselinux-python : Install libselinux-python] ***************************
+2017-05-09 15:06:00,022 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:00,024 p=13831 u=jasonzhang |  TASK [epel : Get epel-repo rpm] ************************************************
+2017-05-09 15:06:00,834 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:00,836 p=13831 u=jasonzhang |  TASK [epel : Install epel-repo rpm] ********************************************
+2017-05-09 15:06:01,932 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:01,934 p=13831 u=jasonzhang |  TASK [ntp : Install ntp] *******************************************************
+2017-05-09 15:06:06,960 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:06,962 p=13831 u=jasonzhang |  TASK [ntp : Ensure ntp is running and enabled] *********************************
+2017-05-09 15:06:07,415 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:07,417 p=13831 u=jasonzhang |  TASK [ambari_common : Check OS Version] ****************************************
+2017-05-09 15:06:07,449 p=13831 u=jasonzhang |  [0;36mskipping: [node1][0m
+2017-05-09 15:06:07,452 p=13831 u=jasonzhang |  TASK [ambari_common : Ensure iptables is stopped and is not running at boot time.] ***
+2017-05-09 15:06:07,750 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:07,752 p=13831 u=jasonzhang |  TASK [ambari_common : Remove ipv4 'localhost.localdomain' from /etc/hosts] *****
+2017-05-09 15:06:08,014 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:08,016 p=13831 u=jasonzhang |  TASK [ambari_common : Remove ipv6 'localhost.localdomain' from /etc/hosts] *****
+2017-05-09 15:06:08,284 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:08,287 p=13831 u=jasonzhang |  TASK [ambari_common : Add localhost to /etc/hosts] *****************************
+2017-05-09 15:06:08,562 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:08,564 p=13831 u=jasonzhang |  TASK [ambari_common : Download Ambari repo] ************************************
+2017-05-09 15:06:08,928 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:08,948 p=13831 u=jasonzhang |  TASK [ambari_common : Create Logrotate Script for Hadoop Services] *************
+2017-05-09 15:06:09,330 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:06:09,340 p=13831 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 15:06:09,349 p=13831 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 15:06:09,874 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:06:09,876 p=13831 u=jasonzhang |  TASK [ambari_master : Install ambari server] ***********************************
+2017-05-09 15:07:34,196 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:07:34,198 p=13831 u=jasonzhang |  TASK [ambari_master : Set Ambari Server Max Memory] ****************************
+2017-05-09 15:07:34,480 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:07:34,482 p=13831 u=jasonzhang |  TASK [ambari_master : Setup ambari server] *************************************
+2017-05-09 15:08:10,155 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:10,160 p=13831 u=jasonzhang |  TASK [ambari_master : start ambari server] *************************************
+2017-05-09 15:08:10,444 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:10,456 p=13831 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 15:08:10,466 p=13831 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 15:08:10,972 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:08:10,975 p=13831 u=jasonzhang |  TASK [ambari_slave : Install ambari-agent] *************************************
+2017-05-09 15:08:22,575 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:22,577 p=13831 u=jasonzhang |  TASK [ambari_slave : Create ambari-agent hostname script] **********************
+2017-05-09 15:08:23,079 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:23,081 p=13831 u=jasonzhang |  TASK [ambari_slave : Configure ambari-server hostname in ambari-agent configuration] ***
+2017-05-09 15:08:23,992 p=13831 u=jasonzhang |  [0;33mchanged: [node1] => (item={u'insertafter': u'\\[server\\]', u'regexp': u'^.*hostname=.*$', u'line': u'hostname=node1'})[0m
+2017-05-09 15:08:23,995 p=13831 u=jasonzhang |  [0;33mchanged: [node1] => (item={u'insertafter': u'\\[agent\\]', u'regexp': u'^hostname_script=.*$', u'line': u'hostname_script=/var/lib/ambari-agent/hostname.sh'})[0m
+2017-05-09 15:08:23,997 p=13831 u=jasonzhang |  TASK [ambari_slave : Ensure ambari-agent is running] ***************************
+2017-05-09 15:08:24,293 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:24,296 p=13831 u=jasonzhang |  TASK [ambari_slave : Wait for agent to register] *******************************
+2017-05-09 15:08:34,574 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:34,581 p=13831 u=jasonzhang |  PLAY ***************************************************************************
+2017-05-09 15:08:34,603 p=13831 u=jasonzhang |  TASK [setup] *******************************************************************
+2017-05-09 15:08:35,238 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:08:35,241 p=13831 u=jasonzhang |  TASK [epel : Get epel-repo rpm] ************************************************
+2017-05-09 15:08:35,518 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:08:35,520 p=13831 u=jasonzhang |  TASK [epel : Install epel-repo rpm] ********************************************
+2017-05-09 15:08:36,013 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:08:36,017 p=13831 u=jasonzhang |  TASK [python-pip : Install python-pip] *****************************************
+2017-05-09 15:08:41,502 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:41,504 p=13831 u=jasonzhang |  TASK [httplib2 : Install python httplib2 dependency] ***************************
+2017-05-09 15:08:42,777 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:42,781 p=13831 u=jasonzhang |  TASK [ambari_config : include_vars] ********************************************
+2017-05-09 15:08:42,879 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:08:42,882 p=13831 u=jasonzhang |  TASK [ambari_config : Install python-requests] *********************************
+2017-05-09 15:08:45,815 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:08:45,827 p=13831 u=jasonzhang |  TASK [ambari_config : check if ambari-server is up on node1:8080] **************
+2017-05-09 15:10:46,178 p=13831 u=jasonzhang |  [0;32mok: [node1][0m
+2017-05-09 15:10:46,182 p=13831 u=jasonzhang |  TASK [ambari_config : Deploy cluster with Ambari; http://node1:8080] ***********
+2017-05-09 15:15:19,176 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:15:19,182 p=13831 u=jasonzhang |  TASK [ambari_config : include] *************************************************
+2017-05-09 15:15:19,233 p=13831 u=jasonzhang |  [0;36mincluded: /Users/jasonzhang/Documents/github/real_time_log_analysis/incubator-metron-Metron_0.2.1BETA_rc2/metron-deployment/roles/ambari_config/tasks/start_hdp.yml for node1[0m
+2017-05-09 15:15:19,247 p=13831 u=jasonzhang |  TASK [ambari_config : Start the ambari cluster - no wait] **********************
+2017-05-09 15:15:21,043 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:15:21,046 p=13831 u=jasonzhang |  TASK [ambari_config : Start the ambari cluster - wait] *************************
+2017-05-09 15:15:22,565 p=13831 u=jasonzhang |  [0;33mchanged: [node1][0m
+2017-05-09 15:15:22,567 p=13831 u=jasonzhang |  PLAY RECAP *********************************************************************
+2017-05-09 15:15:22,567 p=13831 u=jasonzhang |  node1                      : ok=35   changed=26   unreachable=0    failed=0   

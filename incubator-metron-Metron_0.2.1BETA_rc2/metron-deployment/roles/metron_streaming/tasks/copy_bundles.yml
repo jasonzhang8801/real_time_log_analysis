@@ -1,0 +1,83 @@
+#
+#  Licensed to the Apache Software Foundation (ASF) under one or more
+#  contributor license agreements.  See the NOTICE file distributed with
+#  this work for additional information regarding copyright ownership.
+#  The ASF licenses this file to You under the Apache License, Version 2.0
+#  (the "License"); you may not use this file except in compliance with
+#  the License.  You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+#
+---
+- name: Copy Metron Solr bundle
+  copy:
+    src: "{{ metron_solr_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Elasticsearch bundle
+  copy:
+    src: "{{ metron_elasticsearch_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Enrichment bundle
+  copy:
+    src: "{{ metron_enrichment_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Indexing bundle
+  copy:
+    src: "{{ metron_indexing_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Parsers bundle
+  copy:
+    src: "{{ metron_parsers_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron DataLoads bundle
+  copy:
+    src: "{{ metron_data_management_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Common bundle
+  copy:
+    src: "{{ metron_common_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Pcap bundle
+  copy:
+    src: "{{ metron_pcap_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron MaaS bundle
+  copy:
+    src: "{{ metron_maas_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Copy Metron Profiler bundle
+  copy:
+    src: "{{ metron_profiler_bundle_path }}"
+    dest: "{{ metron_directory }}"
+
+- name: Unbundle Metron bundles
+  shell: "{{ item }}"
+  args:
+    chdir: "{{ metron_directory }}"
+  with_items:
+    - tar xzvf metron-solr*.tar.gz
+    - tar xzvf metron-elasticsearch*.tar.gz
+    - tar xzvf metron-enrichment*.tar.gz
+    - tar xzvf metron-indexing*.tar.gz
+    - tar xzvf metron-parsers*.tar.gz
+    - tar xzvf metron-data-management*.tar.gz
+    - tar xzvf metron-common*.tar.gz
+    - tar xzvf metron-pcap-backend*.tar.gz
+    - tar xzvf metron-maas-service*.tar.gz
+    - tar xzvf metron-profiler*.tar.gz
+    - rm *.tar.gz
