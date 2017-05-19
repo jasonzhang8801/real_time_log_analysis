@@ -5,7 +5,7 @@
 ## System Feature
 
 ## Contributors
-Pengyu Zhu, Sen Zhang, Yue Liu, Yiqiao Li
+Pengyu Zhu, Sen Zhang, Yue Liu
 
 ## License
 Copyright 2017 
